@@ -4,7 +4,7 @@ Learning React
 Understood :
   - Setting up React
   - Basics Structure
-  - usestates
+  - useStates
 
 Outcome :
 Based on todays learning I created a simple welcome page where it shows a name. I've used usestates to make changes with the react, therefore made a random name generator with an array of couple of names and change the name when button is clicked.
@@ -18,3 +18,17 @@ Understood :
 
 Outcome : 
 Based on today's learning I recreated the welcome page using Tailwind CSS, updated functionalities and enhanced the design. I added a navbar and a simple form to learn form handling and two-way handling. Hence I changed the previous 'Change user' button and let the form which ask for a username update the name and the logo name when 'continue' button is clicked. 
+
+
+#Day3 - 11 Dec 2024 
+
+Understood :
+  - Components
+  - Rendering JSON data
+  - Props drilling
+  - API integration
+  - useEffects
+  - Some Scrollbar tricks
+
+Outcome : 
+Based on today's Learning I added two components.In the first one, got some JSON data from ChatGPT and rendred it into our project. In the second, I used external API (from newsapi.org) integrating it using useEffects and advanced concepts of Javascript (Async Await). I removed the scrollbar for the 2 sections i made today and doing this, users will not have to see the scrollbar but still use scrolling functionality
