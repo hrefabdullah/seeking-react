@@ -4,10 +4,12 @@ import About from './Pages/About'
 import Courses from './Pages/Courses'
 import Contact from './Pages/Contact'
 import App from './App'
+import CoursesContext from './Context/CoursesContext'
 
 const routes = () => {
     return (
-        <div>
+       <CoursesContext>
+         <div>
             <Routes>
                 <Route path='/' element={<App />} />
                 <Route path='/about' element={<About />} />
@@ -15,6 +17,7 @@ const routes = () => {
                 <Route path='/Contact' element={<Contact />} />
             </Routes>
         </div>
+       </CoursesContext>
     )
 }
 

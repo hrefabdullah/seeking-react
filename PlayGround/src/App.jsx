@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import TechNews from './Components/TechNews';
 import Login from './Components/Login';
 import { Link } from 'react-router-dom';
+import { DataContext } from './Context/CoursesContext';
 
 function App() {
 
 
  
-
+  
   const [news, setNews] = useState([])
 
   useEffect(() => {
@@ -20,8 +21,9 @@ function App() {
     techns()
   }, []);
 
-  var nameA = 'User'
-  const [a, SetA] = useState(nameA)
+  // var nameA = 'User'
+  // const [a, SetA] = useState(nameA)
+  const {obj,username,SetUsername} = useContext(DataContext)
 
   const [loginPopup,SetLogin] = useState(false)
 
@@ -49,23 +51,23 @@ function App() {
           </div>
         </nav>
         <body className='flex flex-col justify-center items-center h-screen w-screen'>
-          <h1 className='text-4xl flex gap-2 font-semibold my-3 '>Hello <p className='text-purple-700 font-bold'>{a}</p></h1>
+          <h1 className='text-4xl flex gap-2 font-semibold my-3 '>Hello <p className='text-purple-700 font-bold'>{username}</p></h1>
           <p>Welcome to your first <b className='text-purple-700'>ReactRegain</b> project</p>
           <button onClick={loginClick} className='my-3 rounded-lg bg-purple-700 px-2 py-1 text-sm font-semibold active:bg-purple-900' >Get Started</button>
         </body>
         
           {loginPopup && (
             <div className={`flex justify-center items-center fixed  border rounded bg-purple-700`}>
-              <Login setA={SetA} close={CloseLogin} />
+              <Login setA={SetUsername} close={CloseLogin} />
             </div>
           )}
         
 
       </body>
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center h-screen justify-center'>
         
-        <h1 className='text-3xl m-4 mb-10 font-semibold'>World News</h1>
-        <div className='h-[600px] bg-purple-700 rounded flex items-center flex-col p-10 scrollbar-hide overflow-scroll'>
+        <h1 className='text-3xl mb-5 font-semibold'>World News</h1>
+        <div className='h-[600px] bg-purple-700 rounded flex items-center flex-col px-8 py-4 scrollbar-hide overflow-scroll'>
 
 
           {news.length > 0 ? (

@@ -11,7 +11,7 @@ const About = () => {
         <div className='cursor-pointer hover:underline'><Link to='/'>Home</Link></div>
           <div className='cursor-pointer underline hover:underline'><Link to='/About'>About</Link></div>
           <div className='cursor-pointer  hover:underline'><Link to='/Contact'>Contact</Link></div>
-          <button className='cursor-pointer hover:underline'>Login</button>
+          <button className='cursor-pointer hover:underline'><Link to='/Courses'>Courses</Link></button>
         </div>
       </nav>
      <div className='text-white m-10'>
