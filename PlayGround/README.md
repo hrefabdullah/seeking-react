@@ -42,3 +42,11 @@ Understood :
 
 Outcome : 
 Based on today's learning I used React Routing DOM and Changed 90% of the project I'm working on. The Simple looking web page has now become more complex as now it has a responsive navbar, routing through different pages (home, about, contact, Courses) and use of External API. Also did some work on changing user form.
+
+#Day 5 - 14 Dec 2024
+
+Understood :
+  - Context API
+
+Outcome :
+Based on today's learning, I centralised all my data for courses in a Context, also I moved the username and its useState to Context.jsx so that name will not change on switching between pages. 
