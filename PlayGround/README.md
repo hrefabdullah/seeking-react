@@ -32,3 +32,13 @@ Understood :
 
 Outcome : 
 Based on today's Learning I added two components.In the first one, got some JSON data from ChatGPT and rendred it into our project. In the second, I used external API (from newsapi.org) integrating it using useEffects and advanced concepts of Javascript (Async Await). I removed the scrollbar for the 2 sections i made today and doing this, users will not have to see the scrollbar but still use scrolling functionality
+
+#Day4 - 12 Dec 2024
+
+Understood :
+  - Routing and routes
+  - React Routing DOM
+  - Revised previous concepts
+
+Outcome : 
+Based on today's learning I used React Routing DOM and Changed 90% of the project I'm working on. The Simple looking web page has now become more complex as now it has a responsive navbar, routing through different pages (home, about, contact, Courses) and use of External API. Also did some work on changing user form.
